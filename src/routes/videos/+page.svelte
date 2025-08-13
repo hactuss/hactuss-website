@@ -1,0 +1,83 @@
+<main>
+    <a href="/">BACK</a>
+    <h1>Things is have here</h1>
+    <ul>
+        <li>
+            the story of emoticons: https://www.youtube.com/watch?v=tf-YVA_Ta68
+        </li>
+        <li>Two Time: https://www.youtube.com/watch?v=BZk8UZ7a7uY</li>
+        <li>Pico vs Nene: https://www.youtube.com/watch?v=CcjwoBqwLp8</li>
+    </ul>
+    <h2>Things i forgot about</h2>
+    <ul>
+        <li>music in terminal: https://www.youtube.com/watch?v=xmVL7CDg4cM</li>
+        <li>bri'ish: https://www.youtube.com/watch?v=bVcd09omAqE</li>
+        <li>Funkin Ost:https://m.youtube.com/@FunkinSound/releases</li>
+        <li>
+            dipper being brutally honest:
+            https://www.youtube.com/watch?v=Ut_BGUhNKWc
+        </li>
+        <li>
+            bouncing dvd logo obs: https://www.youtube.com/watch?v=hY5VZfT6xzA
+        </li>
+        <li>mic grscr: https://www.youtube.com/watch?v=YdpyK4FuLgk</li>
+        <li>creeper cerial: https://www.youtube.com/watch?v=Rbgqrxzd47c</li>
+        <li>Dsmp: https://www.youtube.com/shorts/Yxrldf-KHUY</li>
+        <li>
+            minecraft backrooms tune:
+            https://www.youtube.com/watch?v=PvUaMW4qgpw
+        </li>
+        <li>12 yo cooking: https://www.youtube.com/shorts/KFFqx4u6VTM</li>
+        <li>FNF commercial: https://www.youtube.com/watch?v=YC-GQHomxnY</li>
+        <li>CAPTAIN: https://www.youtube.com/watch?v=8UjWwMtrETk</li>
+        <li>uni the galaxy cat: https://www.youtube.com/watch?v=eKXNxRZIqE8</li>
+        <li>bastighg layout: https://www.youtube.com/watch?v=CLXa41W9dzc</li>
+        <li>Video unavalible: https://www.youtube.com/watch?v=xDfI5CaHFzE</li>
+        <li>rocketlauncher: https://www.youtube.com/watch?v=ztb6_hEpCS8</li>
+        <li>midnight radio: https://www.youtube.com/watch?v=HfdhaCo-c3M</li>
+        <li>
+            Philza remembering Technoblade:
+            https://www.youtube.com/watch?v=EudJOv6o158
+        </li>
+        <li>
+            Nobody? (not found): https://www.youtube.com/watch?v=7Sk4WY2kymI
+        </li>
+        <li>2013: https://www.youtube.com/watch?v=36IDZNUedts</li>
+        <li>?: https://www.youtube.com/watch?v=yZMfgW7b4tk</li>
+        <li>CG reworked: https://www.youtube.com/watch?v=QgRoZPlmYUw</li>
+        <li>#CaSO4: https://www.youtube.com/watch?v=W67yuoZW-Oo</li>
+        <li>
+            Flyday chinatown remix: https://www.youtube.com/watch?v=i3As7wOIJds
+        </li>
+        <li>
+            Permanent moon base: https://www.youtube.com/watch?v=kA_ZXCJY8Z0
+        </li>
+        <li>GTA Music: https://www.youtube.com/watch?v=pWO718iy5mY</li>
+        <li>
+            Mission Impossible Cover:
+            https://www.youtube.com/watch?v=Q9-fYdy12PY
+        </li>
+        <li>Ghost City Tokio: https://www.youtube.com/watch?v=DtBoAqkIJzI</li>
+    </ul>
+    <p>
+        I could put so much stuff in here. RIP to all the ones that don't work
+        anymore.
+    </p>
+</main>
+
+<style>
+    * {
+        font-family: "Reddit Mono";
+    }
+    .player {
+        display: none;
+    }
+    .song_button {
+        margin-left: 33%;
+        color: lime;
+        width: 25%;
+        height: 125%;
+        background-color: rgba(0, 0, 0, 0);
+        margin-bottom: 5px;
+    }
+</style>

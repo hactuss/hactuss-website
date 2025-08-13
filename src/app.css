@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@font-face {
+    font-family: "Akira Expanded";
+    src:
+        local("Akira Expanded Demo"),
+        url("/src/lib/assets/akira_expanded/Akira\ Expanded\ Demo.otf")
+            format("opentype");
+}
+
+.goldman-regular {
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.goldman-bold {
+    font-family: "Goldman", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    /*--bg-dark: rgb(33, 33, 33);
+    --bg-light: rgb(175 175 175);
+    --text-dark: rgb();
+    --text-light: rgb();
+    font-family: Reddit-Mono, monospace, "Courier New", Courier;
+    /*color: white;*/
+    background: rgb(--bg-light) url("") fixed;
+    background-repeat: no-repeat;
+}
+/* body {
+    border: red solid;
+}
+
+main {
+    border: red solid;
+}
+div {
+    border: red solid;
+    } */
+h1 {
+    font-size: 3rem;
+    font-family: "Akira Expanded";
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.95rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.75rem;
+}
+p {
+    font-size: 1.25rem;
+}
+a {
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+button {
+    font-size: 1.25rem;
+    padding: 5pt;
+    transition: 10ms ease-in-out;
+    border: solid transparent;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+button:active {
+    transition: 10ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+iframe {
+    margin: 50px;
+}
