@@ -1,3 +1,5 @@
+<script></script>
+
 <main>
     <div class="fixed left-0 top-0 bg-black h-[100vh]">
         <h1
@@ -17,9 +19,14 @@
             <a href="https://office-haj.vercel.app" class="bg-black text-white"
                 >go to the office</a
             >
+            <a href="https://isitspookymonth.vercel.app">is it spooky month?</a>
             <a href="/radio">radio</a>
             <a href="/videos" class="bg-black text-white">videos</a>
             <a href="/randomplay">randomplayer</a>
+            <a
+                href="https://github.com/hactuss?tab=repositories"
+                target="_blank">Github</a
+            >
         </div>
     </div>
 </main>
