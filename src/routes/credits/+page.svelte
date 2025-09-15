@@ -33,7 +33,7 @@
                 >Flag Japan</a
             >
         </li>
-        <li><a href="">and others on the same page </a></li>
+        <li><a href="https://">and others on the same page </a></li>
     </ul>
     <h2>Randomplayer:</h2>
     <ul>

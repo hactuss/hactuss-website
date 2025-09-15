@@ -1,4 +1,4 @@
-<main class=" flex justify-center items-center flex-row">
+<main>
     <div class="fixed left-0 top-0 bg-black h-[100vh]">
         <h1
             style="font-size: 9rem; writing-mode: vertical-lr; align-bottom"
@@ -7,14 +7,19 @@
             Hactus
         </h1>
     </div>
+</main>
+<main class="">
     <div class="flex flex-col justify-center items-center">
-        <a href="https://office-haj.vercel.app" class="bg-black text-white"
-            >go to the office</a
+        <div
+            class="flex flex-col justify-center items-center"
+            style="justify-self: center;"
         >
-        <a href="/radio">radio</a>
-        <a href="/videos" class="bg-black text-white">videos</a>
-        <a href="/randomplay">randomplayer</a>
-        <a href="/credits" class="bg-black text-white">credits</a>
-        <a href="/contact">contact</a>
+            <a href="https://office-haj.vercel.app" class="bg-black text-white"
+                >go to the office</a
+            >
+            <a href="/radio">radio</a>
+            <a href="/videos" class="bg-black text-white">videos</a>
+            <a href="/randomplay">randomplayer</a>
+        </div>
     </div>
 </main>
