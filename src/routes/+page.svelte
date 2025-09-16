@@ -16,12 +16,12 @@
             class="flex flex-col justify-center items-center"
             style="justify-self: center;"
         >
-            <a href="https://office-haj.vercel.app" class="bg-black text-white"
+            <a href="https://office-haj.vercel.app"
                 >go to the office</a
             >
             <a href="https://isitspookymonth.vercel.app">is it spooky month?</a>
             <a href="/radio">radio</a>
-            <a href="/videos" class="bg-black text-white">videos</a>
+            <a href="/videos">videos</a>
             <a href="/randomplay">randomplayer</a>
             <a
                 href="https://github.com/hactuss?tab=repositories"
