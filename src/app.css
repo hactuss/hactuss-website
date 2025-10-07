@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@plugin '@tailwindcss/typography';
 @import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @font-face {
     font-family: "Akira Expanded";
@@ -28,7 +27,7 @@
     --text-light: rgb();
     font-family: Reddit-Mono, monospace, "Courier New", Courier;
     /*color: white;*/
-    background: rgb(--bg-light) url("") fixed;
+    background: rgb(200 200 200) url("") fixed;
     background-repeat: no-repeat;
 }
 /* body {
