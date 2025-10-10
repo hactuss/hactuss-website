@@ -65,6 +65,7 @@
         ></div>
         <div id="window">
             <div id="bar"><p>+hactuss.svelte</p></div>
+            <!--
             <div id="option-bar">
                 <button on:click={SetMenuVisible}>Info</button>
                 <button>
@@ -87,6 +88,7 @@
                     </p>
                 </div>
             {/if}
+            -->
             <div id="contents">
                 <a href="https://office-haj.vercel.app">go to the office</a>
                 <a href="https://isitspookymonth.vercel.app"
@@ -95,6 +97,7 @@
                 <a href="/radio">radio</a>
                 <a href="/videos">videos</a>
                 <a href="/randomplay">randomplayer</a>
+                <a href="https://github.com/hactuss?tab=repositories">Github</a>
             </div>
         </div>
         <!--
