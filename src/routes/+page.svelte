@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { derived } from "svelte/store";
+    import { fade } from "svelte/transition";
 
     let top_bottom_text = "none";
     let side_text = "block";
@@ -28,6 +29,14 @@
             }));
         }, 1000);
     });
+    let Infomenu = $state(false);
+    function SetMenuVisible() {
+        if (Infomenu == true) {
+            Infomenu = false;
+        } else {
+            Infomenu = true;
+        }
+    }
 </script>
 
 <main id="main-container" class="flex justify-center content-center">
@@ -56,6 +65,28 @@
         ></div>
         <div id="window">
             <div id="bar"><p>+hactuss.svelte</p></div>
+            <div id="option-bar">
+                <button on:click={SetMenuVisible}>Info</button>
+                <button>
+                    <a
+                        href="https://github.com/hactuss?tab=repositories"
+                        target="_blank">Github</a
+                    >
+                </button>
+            </div>
+            {#if Infomenu == true}
+                <div id="dropdown">
+                    <img
+                        src="https://raw.githubusercontent.com/hactuss/hactuss.github.io/refs/heads/main/img/longcat.gif"
+                        alt="lolcat"
+                        id="img"
+                    />
+                    <p>
+                        Hactuss is a amatour webdeveloper. I like music, gaming,
+                        programming and more.
+                    </p>
+                </div>
+            {/if}
             <div id="contents">
                 <a href="https://office-haj.vercel.app">go to the office</a>
                 <a href="https://isitspookymonth.vercel.app"
@@ -64,10 +95,6 @@
                 <a href="/radio">radio</a>
                 <a href="/videos">videos</a>
                 <a href="/randomplay">randomplayer</a>
-                <a
-                    href="https://github.com/hactuss?tab=repositories"
-                    target="_blank">Github</a
-                >
             </div>
         </div>
         <!--
@@ -111,10 +138,44 @@
     #bar {
         background-color: rgb(200 250 20);
         color: black;
+        border-bottom: solid black 2px;
         font-size: 0.75rem;
         padding: 2px;
     }
+    #option-bar {
+        padding: 0px;
+        background-color: rgb(230, 230, 230);
+        width: 100%;
+        height: 100%;
+    }
+    button,
+    #button {
+        border-radius: 0px;
+        background-color: rgb(220, 220, 220);
+    }
     #contents {
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    #dropdown {
+        background-color: rgb(230, 230, 230);
+        width: auto;
+        max-width: 450px;
+        border: solid black 1px;
+        text-wrap: inherit;
+        margin: 4px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    #img {
+        width: 150px;
+        margin: 25px;
+    }
+    a {
+        display: inline-block;
     }
 </style>

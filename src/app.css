@@ -68,10 +68,8 @@ a {
 }
 button {
     font-size: 1.25rem;
-    padding: 5pt;
     transition: 10ms ease-in-out;
     border: solid transparent;
-    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 button:active {
