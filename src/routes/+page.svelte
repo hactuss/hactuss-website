@@ -3,8 +3,8 @@
     import { derived } from "svelte/store";
     import { fade } from "svelte/transition";
 
-    let top_bottom_text = "none";
-    let side_text = "block";
+    let top_bottom_text = "none",
+        side_text = "block";
 
     const options = {
         weekday: "short",
