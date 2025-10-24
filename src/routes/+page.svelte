@@ -29,28 +29,22 @@
             }));
         }, 1000);
     });
-    let Infomenu = $state(false);
-    function SetMenuVisible() {
-        if (Infomenu == true) {
-            Infomenu = false;
-        } else {
-            Infomenu = true;
-        }
-    }
 </script>
 
-<main id="main-container" class="flex justify-center content-center">
-    <div
-        style="display: {side_text};"
-        class="bg-black w-[100%] h-[100%] flex-1/8"
-    >
-        <h1
-            style="font-size: 9rem; writing-mode: vertical-lr; align-bottom"
-            class="text-white text-center"
+<main id="main-container">
+    {#if true}
+        <div
+            style="display: {side_text};"
+            class="bg-black w-[100%] h-[100%] flex-1/8"
         >
-            H a c t u s
-        </h1>
-    </div>
+            <h1
+                style="font-size: 9rem; writing-mode: vertical-lr; align-bottom"
+                class="text-white text-center"
+            >
+                H a c t u s
+            </h1>
+        </div>
+    {/if}
 
     <div class="w-[100%]">
         <div
@@ -59,36 +53,9 @@
         >
             <div><h1>HACTUS</h1></div>
         </div>
-        <div
-            class="flex flex-col justify-center items-center"
-            style="justify-self: center;"
-        ></div>
+
         <div id="window">
             <div id="bar"><p>+hactuss.svelte</p></div>
-            <!--
-            <div id="option-bar">
-                <button on:click={SetMenuVisible}>Info</button>
-                <button>
-                    <a
-                        href="https://github.com/hactuss?tab=repositories"
-                        target="_blank">Github</a
-                    >
-                </button>
-            </div>
-            {#if Infomenu == true}
-                <div id="dropdown">
-                    <img
-                        src="https://raw.githubusercontent.com/hactuss/hactuss.github.io/refs/heads/main/img/longcat.gif"
-                        alt="lolcat"
-                        id="img"
-                    />
-                    <p>
-                        Hactuss is a amatour webdeveloper. I like music, gaming,
-                        programming and more.
-                    </p>
-                </div>
-            {/if}
-            -->
             <div id="contents">
                 <a href="https://office-haj.vercel.app">go to the office</a>
                 <a href="https://isitspookymonth.vercel.app"
@@ -100,38 +67,28 @@
                 <a href="https://github.com/hactuss?tab=repositories">Github</a>
             </div>
         </div>
-        <!--
         <div id="window">
-            <div id="bar"><p>timezone.svelte</p></div>
-            <div id="contents">
-                <h2>
-                    {timeoutde}
-                </h2>
-                <h2>
-                    {dateoutde}
-                </h2>
-                <h2>
-                    {() => {}}
-                </h2>
-            </div>
-            <div
-                id="top_bottom_text"
-                style="display: {top_bottom_text}; color: white; background-color: black; position: relative; bottom: 0;"
-            >
-                <div><h1>HACTUS</h1></div>
-            </div>
-        </div> -->
+            <div id="bar"><p></p></div>
+            <div id="contents"></div>
+        </div>
     </div>
 </main>
 
 <!-- rgb(82, 104, 219) -->
 
 <style>
+    * {
+        cursor: crosshair;
+    }
+
     a {
         display: block;
     }
     h1 {
         text-wrap-mode: nowrap;
+    }
+    main {
+        display: flex;
     }
 
     #window {

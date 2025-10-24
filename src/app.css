@@ -27,7 +27,9 @@
     --text-light: rgb();
     font-family: Reddit-Mono, monospace, "Courier New", Courier;
     /*color: white;*/
-    background: rgb(200 200 200) url("") fixed;
+    /*background: rgb(200 200 200) url("") fixed;*/
+    background-color: rgba(20, 20, 20);
+    color: white;
     background-repeat: no-repeat;
 }
 /* body {
