@@ -94,6 +94,7 @@
     #window {
         border: solid 2px black;
         margin: 10px;
+        background-color: rgb(20, 20, 20);
     }
     #bar {
         background-color: rgb(200 250 20);
@@ -117,6 +118,7 @@
         margin: 10px;
         display: flex;
         flex-direction: column;
+        background-color: rgb(20, 20, 20);
     }
     #dropdown {
         background-color: rgb(230, 230, 230);
