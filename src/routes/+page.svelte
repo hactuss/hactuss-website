@@ -1,10 +1,11 @@
 <script lang="ts">
+    // import chartjs from "chartjs";
     import { onMount } from "svelte";
     import { derived } from "svelte/store";
     import { fade } from "svelte/transition";
 
-    let top_bottom_text = "none",
-        side_text = "block";
+    let top_bottom_text = "none";
+    
 
     const options = {
         weekday: "short",
@@ -12,29 +13,34 @@
         minutes: "2-digit",
         seconds: "2-digit",
     };
-    let timeoutde = $state("");
-    let dateoutde = "";
+    
     const timezonede = "Europe/Berlin";
-    let d = $state(new Date());
-
-    let countdown = $derived(d.getSeconds());
-
-    dateoutde = timeoutde = d.toLocaleDateString(undefined, {
-        timeZone: timezonede,
-    });
-    onMount(() => {
-        setInterval(() => {
-            return (timeoutde = d.toLocaleTimeString(undefined, {
+    
+    let d = new Date();
+    let dateoutde = d.toLocaleDateString(undefined, {timeZone: timezonede,});
+    
+    let timeoutde = $state("");
+    
+    function updatetime(){
+        return (timeoutde = d.toLocaleTimeString(undefined, {
                 timeZone: timezonede,
-            }));
-        }, 1000);
-    });
+            }))
+    }
+    
+
+    onMount(async () => {
+        setInterval(() => {
+            console.log(d.toLocaleTimeString(undefined, {
+                timeZone: timezonede,
+            }))
+        }, 1);
+    })
 </script>
 
 <main id="main-container">
-    {#if true}
+    
         <div
-            style="display: {side_text};"
+            
             class="bg-black w-[100%] h-[100%] flex-1/8"
         >
             <h1
@@ -44,7 +50,7 @@
                 H a c t u s
             </h1>
         </div>
-    {/if}
+    
 
     <div class="w-[100%]">
         <div
@@ -68,8 +74,11 @@
             </div>
         </div>
         <div id="window">
-            <div id="bar"><p></p></div>
-            <div id="contents"></div>
+            <div id="bar"><p>time.hactuss.vercel.app</p></div>
+            <div id="contents">
+                <p>date: {dateoutde}</p>
+                <p>time: {updatetime()}</p>
+            </div>
         </div>
     </div>
 </main>
