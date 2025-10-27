@@ -78,7 +78,11 @@
 
 <style>
     * {
-        cursor: crosshair;
+        cursor: url('https://psychoslinux.gitlab.io/images/Cursor_RetroWave_Normal.gif'), auto;
+    }
+    *::selection{
+        background-color: rgb(55 253 77);
+        color: rgb(200 250 20);
     }
 
     a {
