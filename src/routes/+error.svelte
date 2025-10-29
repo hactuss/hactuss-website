@@ -1,7 +1,7 @@
 <main>
     <p>
         seems like this page doesnt exist or something went wrong while
-        development. here's a dog for compesation
+        development. here's a dog for compensation.
     </p>
     <img
         src="https://media1.tenor.com/m/mc3OyxhLazUAAAAC/doggo-doge.gif"
